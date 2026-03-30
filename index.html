@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Anesu Manjengwa-Data Analytics & ML Engineer (Teal)</title>
+<title>Anesu Manjengwa — Data Analytics & ML Engineer</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
@@ -25,7 +25,7 @@ body{background:#080C0F;color:var(--text);font-family:'Inter',sans-serif;font-si
 
 /* NAV */
 nav{position:fixed;top:0;left:0;right:0;z-index:999;display:flex;align-items:center;justify-content:space-between;padding:20px 60px;transition:all .4s ease}
-nav.scrolled{background:rgba(10,10,10,0.92);backdrop-filter:blur(20px);padding:14px 60px;border-bottom:0.5px solid var(--border)}
+nav.scrolled{background:rgba(8,12,15,0.95);backdrop-filter:blur(20px);padding:14px 60px;border-bottom:0.5px solid var(--border)}
 .nav-logo{font-family:'Bebas Neue',sans-serif;font-size:28px;letter-spacing:3px;color:var(--teal);text-decoration:none}
 .nav-links{display:flex;gap:36px;list-style:none}
 .nav-links a{text-decoration:none;color:var(--text-muted);font-size:13px;font-weight:500;letter-spacing:1.5px;text-transform:uppercase;transition:color .3s;position:relative}
@@ -65,28 +65,21 @@ section{padding:120px 60px}
 
 /* ABOUT */
 #about{background:var(--bg)}
-.about-grid{display:grid;grid-template-columns:340px 1fr;gap:80px;align-items:start}
-.about-left{}
+.about-grid{display:grid;grid-template-columns:320px 1fr;gap:80px;align-items:start}
 .profile-photo-wrap{position:relative;margin-bottom:32px}
 .profile-photo{width:260px;height:320px;border-radius:var(--radius);object-fit:cover;display:block;border:0.5px solid var(--border)}
-.profile-photo-placeholder{width:260px;height:320px;border-radius:var(--radius);background:var(--bg3);border:1.5px dashed var(--teal-dim);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;cursor:pointer;transition:border-color .3s}
-.profile-photo-placeholder:hover{border-color:var(--teal)}
-.profile-photo-placeholder svg{opacity:.4}
-.profile-photo-placeholder span{font-size:11px;color:var(--text-dim);letter-spacing:2px;text-transform:uppercase}
 .photo-badge{position:absolute;bottom:-16px;left:16px;background:var(--teal);color:var(--bg);font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:6px 14px;border-radius:3px}
-.about-contact{margin-top:20px;display:flex;flex-direction:column;gap:10px}
+.about-contact{margin-top:40px;display:flex;flex-direction:column;gap:10px}
 .contact-row{display:flex;align-items:center;gap:12px;font-size:13px;color:var(--text-muted);text-decoration:none;transition:color .3s}
 .contact-row:hover{color:var(--teal)}
 .contact-icon{width:30px;height:30px;border:0.5px solid var(--border);border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:13px;flex-shrink:0;transition:border-color .3s}
 .contact-row:hover .contact-icon{border-color:var(--teal)}
-.about-right{}
 .about-text p{color:var(--text-muted);font-size:15px;line-height:1.9;margin-bottom:20px}
 .about-text p strong{color:var(--text);font-weight:500}
 .skills-wrap{background:var(--bg3);border:0.5px solid var(--border);border-radius:var(--radius);padding:36px;margin-top:40px}
 .skills-title{font-family:'DM Serif Display',serif;font-size:20px;color:var(--text);margin-bottom:4px}
 .skills-sub{font-size:13px;color:var(--text-dim);margin-bottom:28px}
 .skills-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
-.skill-item{}
 .skill-name{font-size:11px;font-weight:500;color:var(--text-muted);letter-spacing:1px;margin-bottom:7px;text-transform:uppercase}
 .skill-bar{height:2px;background:var(--surface2);border-radius:1px;overflow:hidden}
 .skill-fill{height:100%;background:linear-gradient(90deg,var(--teal-dim),var(--teal));border-radius:1px;width:0;transition:width 1.2s cubic-bezier(0.4,0,0.2,1)}
@@ -98,17 +91,9 @@ section{padding:120px 60px}
 .project-card::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(0,212,160,0.03),transparent);opacity:0;transition:opacity .3s;z-index:1}
 .project-card:hover{background:var(--bg3)}
 .project-card:hover::before{opacity:1}
-
-/* Project image */
 .project-img-wrap{width:100%;height:200px;overflow:hidden;position:relative;background:var(--bg3)}
 .project-img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s ease}
 .project-card:hover .project-img{transform:scale(1.04)}
-.project-img-placeholder{width:100%;height:200px;background:var(--bg3);border-bottom:0.5px solid var(--surface2);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;transition:background .3s}
-.project-card:hover .project-img-placeholder{background:var(--surface)}
-.project-img-placeholder svg{opacity:.2}
-.project-img-placeholder span{font-size:10px;color:var(--text-dim);letter-spacing:2px;text-transform:uppercase}
-.project-img-overlay{position:absolute;inset:0;background:linear-gradient(to bottom,transparent 50%,rgba(10,10,10,0.8));pointer-events:none}
-
 .project-body{padding:32px 28px;position:relative;z-index:2}
 .project-num{font-family:'Bebas Neue',sans-serif;font-size:56px;color:var(--text-dim);line-height:1;margin-bottom:16px;transition:color .3s}
 .project-card:hover .project-num{color:var(--teal-dim)}
@@ -134,7 +119,6 @@ section{padding:120px 60px}
 .doc-btn:hover{background:var(--teal);color:var(--bg);border-color:var(--teal)}
 .doc-btn svg{transition:transform .3s}
 .doc-btn:hover svg{transform:translateY(2px)}
-.doc-unavail{font-size:11px;color:var(--text-dim);letter-spacing:1px;text-transform:uppercase;margin-top:4px}
 
 /* CERTS */
 #certs{background:var(--bg2)}
@@ -178,22 +162,18 @@ section{padding:120px 60px}
 footer{background:var(--bg);border-top:0.5px solid var(--surface2);padding:32px 60px;display:flex;align-items:center;justify-content:space-between}
 .footer-logo{font-family:'Bebas Neue',sans-serif;font-size:20px;color:var(--teal-dim);letter-spacing:2px}
 .footer-copy{font-size:12px;color:var(--text-dim)}
-.gold-divider{width:60px;height:1px;background:var(--teal);margin:24px 0}
+.teal-divider{width:60px;height:1px;background:var(--teal);margin:24px 0}
 
 @keyframes fadeUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
 @keyframes fadeIn{from{opacity:0}to{opacity:1}}
 .reveal{opacity:0;transform:translateY(40px);transition:opacity .8s ease,transform .8s ease}
 .reveal.visible{opacity:1;transform:translateY(0)}
 
-/* HOW TO ADD PHOTO NOTICE */
-.photo-guide{background:var(--surface);border:0.5px solid var(--border);border-radius:8px;padding:14px 18px;margin-top:16px;font-size:12px;color:var(--text-dim);line-height:1.7}
-.photo-guide strong{color:var(--teal);font-size:11px;letter-spacing:1px;text-transform:uppercase;display:block;margin-bottom:4px}
-
 @media(max-width:900px){
   nav{padding:16px 24px}nav.scrolled{padding:12px 24px}.nav-links{display:none}
   #hero,section,footer{padding-left:24px;padding-right:24px}
   .about-grid,.certs-layout{grid-template-columns:1fr}.certs-sticky{position:static}
-  .profile-photo,.profile-photo-placeholder{width:100%;height:240px}
+  .profile-photo{width:100%;height:280px}
   .sem-grid{grid-template-columns:1fr 1fr}.hero-stats{right:24px}
 }
 @media(max-width:600px){.sem-grid{grid-template-columns:1fr}.projects-grid{grid-template-columns:1fr}.hero-stats{display:none}}
@@ -211,23 +191,24 @@ footer{background:var(--bg);border-top:0.5px solid var(--surface2);padding:32px 
     <li><a href="#education">Education</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
-  <a href="mailto:manjengwap10@gmail.com" class="nav-cta">Hire Me</a>
+  <a href="mailto:manjengwap10@gmail.com?subject=Hire%20Inquiry%20%E2%80%94%20Anesu%20Manjengwa&body=Hi%20Anesu%2C%0A%0AI%20came%20across%20your%20portfolio%20and%20would%20like%20to%20discuss%20an%20opportunity%20with%20you.%0A%0A" class="nav-cta">Hire Me</a>
 </nav>
 
+<!-- HERO -->
 <section id="hero">
   <div class="hero-bg"></div>
   <div class="hero-grid"></div>
-  <p class="hero-eyebrow">Available for opportunities</p>
+  <p class="hero-eyebrow">Open to opportunities</p>
   <h1 class="hero-name">Anesu<br/><span>Manjengwa</span></h1>
   <p class="hero-title">Data Analytics &amp; Machine Learning Engineer</p>
-  <p class="hero-desc">Final-year BCA student and founder of <strong>MA TechHub</strong> — building intelligent dashboards, predictive models, and data-driven systems for FinTech and SaaS companies globally. Based in Harare, Zimbabwe.</p>
+  <p class="hero-desc">BCA Graduate and founder of <strong>MA TechHub</strong> — building intelligent dashboards, predictive models, and data-driven systems for FinTech and SaaS companies globally. Based in Harare, Zimbabwe.</p>
   <div class="hero-ctas">
     <a href="#projects" class="btn-primary">View My Work</a>
-    <a href="#contact" class="btn-secondary">Get In Touch</a>
+    <a href="mailto:manjengwap10@gmail.com?subject=Let%27s%20Work%20Together%20%E2%80%94%20Anesu%20Manjengwa&body=Hi%20Anesu%2C%0A%0A" class="btn-secondary">Get In Touch</a>
   </div>
   <div class="hero-stats">
     <div class="hero-stat"><div class="hero-stat-num">8+</div><div class="hero-stat-label">Live Projects</div></div>
-    <div class="hero-stat"><div class="hero-stat-num">15+</div><div class="hero-stat-label">Certifications</div></div>
+    <div class="hero-stat"><div class="hero-stat-num">16+</div><div class="hero-stat-label">Certifications</div></div>
     <div class="hero-stat"><div class="hero-stat-num">7.92</div><div class="hero-stat-label">CGPA</div></div>
   </div>
   <div class="scroll-indicator"><span class="scroll-line"></span>Scroll to explore</div>
@@ -240,34 +221,27 @@ footer{background:var(--bg);border-top:0.5px solid var(--surface2);padding:32px 
   <p class="section-sub reveal">Data Engineer. Entrepreneur. Pattern Finder.</p>
   <div class="about-grid">
     <div class="about-left reveal">
-      <!-- PHOTO SLOT -->
-      <!-- TO ADD YOUR PHOTO: Replace the div below with: <img src="images/profile.jpg" class="profile-photo" alt="Anesu Manjengwa"/> -->
-      <!-- Upload your photo to a /images/ folder next to this HTML file, or use a Cloudinary URL -->
       <div class="profile-photo-wrap">
-        <div class="profile-photo-placeholder" id="photoSlot" onclick="document.getElementById('photoInput').click()">
-          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="1"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
-          <span>Your Photo Here</span>
+        <!-- PHOTO: saved as images/profile.jpg in your repo -->
+        <img src="images/profile.jpg" class="profile-photo" alt="Anesu Manjengwa"
+          onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+        <!-- Fallback if photo not found -->
+        <div style="display:none;width:260px;height:320px;border-radius:var(--radius);background:var(--bg3);border:1.5px dashed var(--teal-dim);flex-direction:column;align-items:center;justify-content:center;gap:12px">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="1" opacity=".4"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+          <span style="font-size:11px;color:var(--text-dim);letter-spacing:2px;text-transform:uppercase">Add images/profile.jpg</span>
         </div>
-        <input type="file" id="photoInput" accept="image/*" style="display:none" onchange="previewPhoto(this)"/>
         <div class="photo-badge">Anesu Manjengwa</div>
       </div>
-      <div class="photo-guide">
-        <strong>How to add your photo</strong>
-        1. Save your photo as <code>profile.jpg</code> in an <code>images/</code> folder<br/>
-        2. Replace the placeholder div with: <code>&lt;img src="images/profile.jpg" class="profile-photo"/&gt;</code><br/>
-        Or click the placeholder above to preview locally.
-      </div>
-    
-      <div class="about-contact" style="margin-top:24px">
+      <div class="about-contact">
         <a href="tel:+263711664295" class="contact-row"><span class="contact-icon">📞</span>+263 711 664 295</a>
-        <a href="mailto:manjengwap10@gmail.com" class="contact-row"><span class="contact-icon">✉️</span>manjengwap10@gmail.com</a>
+        <a href="mailto:manjengwap10@gmail.com?subject=Hello%20Anesu&body=Hi%20Anesu%2C%0A%0A" class="contact-row"><span class="contact-icon">✉️</span>manjengwap10@gmail.com</a>
         <a href="https://linkedin.com/in/anesu-manjengwa-684766247" target="_blank" class="contact-row"><span class="contact-icon">💼</span>LinkedIn Profile</a>
         <a href="https://github.com/Iceyma02" target="_blank" class="contact-row"><span class="contact-icon">🔗</span>github.com/Iceyma02</a>
       </div>
     </div>
     <div class="about-right">
       <div class="about-text reveal">
-        <p>I'm <strong>Anesu "Icey" Manjengwa</strong>, a 22-year-old developer and analyst completing my Bachelor of Computer Applications at Marwadi University, graduating May 2026 with First Class Distinction.</p>
+        <p>I'm <strong>Anesu "Icey" Manjengwa</strong>, a 22-year-old data engineer and analyst who graduated with a Bachelor of Computer Applications from Marwadi University in November 2025 — First Class with Distinction.</p>
         <p>I founded <strong>MA TechHub</strong> — a boutique data analytics consultancy delivering intelligent dashboards and ML-powered insights for FinTech and SaaS founders globally. My two-lane strategy uses African SME wins to build credibility for global positioning.</p>
         <p>I strongly believe that <em>"everything in life follows a pattern"</em> — a philosophy that shapes every model I build, every system I architect, and every business decision I make.</p>
         <p>When I'm not coding, you'll find me at the gym, on the field, gaming competitively, or studying the patterns of the forex market.</p>
@@ -299,12 +273,10 @@ footer{background:var(--bg);border-top:0.5px solid var(--surface2);padding:32px 
   <p class="section-sub reveal">Production-grade systems — deployed, live, open to explore</p>
   <div class="projects-grid reveal">
 
-    <!-- PROJECT 1 -->
     <div class="project-card">
-      <!-- IMAGE SLOT: Replace placeholder with <img src="images/proj-retail.png" class="project-img" alt="Zimbabwe Retail IQ"/> -->
-      <div class="project-img-placeholder">
-        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
-        <span>Add screenshot → images/proj-retail.png</span>
+      <div class="project-img-wrap">
+        <img src="images/proj-retail.png" class="project-img" alt="Zimbabwe Retail Intelligence System"
+          onerror="this.parentElement.style.background='var(--surface)';this.style.display='none'"/>
       </div>
       <div class="project-body">
         <div class="project-num">01</div>
@@ -318,9 +290,9 @@ footer{background:var(--bg);border-top:0.5px solid var(--surface2);padding:32px 
     </div>
 
     <div class="project-card">
-      <div class="project-img-placeholder">
-        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="1"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
-        <span>Add screenshot → images/proj-mining.png</span>
+      <div class="project-img-wrap">
+        <img src="images/proj-mining.png" class="project-img" alt="Mining Production Efficiency Dashboard"
+          onerror="this.parentElement.style.background='var(--surface)';this.style.display='none'"/>
       </div>
       <div class="project-body">
         <div class="project-num">02</div>
@@ -334,9 +306,9 @@ footer{background:var(--bg);border-top:0.5px solid var(--surface2);padding:32px 
     </div>
 
     <div class="project-card">
-      <div class="project-img-placeholder">
-        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="1"><path d="M5 17H3a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v3"/><rect width="13" height="8" x="9" y="13" rx="1"/></svg>
-        <span>Add screenshot → images/proj-supply.png</span>
+      <div class="project-img-wrap">
+        <img src="images/proj-supply.png" class="project-img" alt="Supply Chain Optimization Dashboard"
+          onerror="this.parentElement.style.background='var(--surface)';this.style.display='none'"/>
       </div>
       <div class="project-body">
         <div class="project-num">03</div>
@@ -350,9 +322,9 @@ footer{background:var(--bg);border-top:0.5px solid var(--surface2);padding:32px 
     </div>
 
     <div class="project-card">
-      <div class="project-img-placeholder">
-        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="1"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
-        <span>Add screenshot → images/proj-disease.png</span>
+      <div class="project-img-wrap">
+        <img src="images/proj-disease.png" class="project-img" alt="Disease Prediction and Diagnosis"
+          onerror="this.parentElement.style.background='var(--surface)';this.style.display='none'"/>
       </div>
       <div class="project-body">
         <div class="project-num">04</div>
@@ -366,15 +338,15 @@ footer{background:var(--bg);border-top:0.5px solid var(--surface2);padding:32px 
     </div>
 
     <div class="project-card">
-      <div class="project-img-placeholder">
-        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="1"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-        <span>Add screenshot → images/proj-attrition.png</span>
+      <div class="project-img-wrap">
+        <img src="images/proj-attrition.png" class="project-img" alt="Employee Attrition Prediction"
+          onerror="this.parentElement.style.background='var(--surface)';this.style.display='none'"/>
       </div>
       <div class="project-body">
         <div class="project-num">05</div>
         <span class="project-tag">HR Analytics</span>
         <h3 class="project-name">Employee Attrition Prediction Model</h3>
-        <p class="project-desc">XGBoost-powered HR analytics model predicting employee attrition with feature importance analysis. Helps HR teams reduce turnover costs.</p>
+        <p class="project-desc">XGBoost-powered HR analytics model predicting employee attrition with feature importance analysis. Helps HR teams reduce turnover costs significantly.</p>
         <div class="project-stack"><span class="stack-pill">Python</span><span class="stack-pill">XGBoost</span><span class="stack-pill">Streamlit</span></div>
         <br/>
         <a href="https://employee-attrition-prediction-model-akncxskvrphgdm7oxszr3e.streamlit.app/" target="_blank" class="project-link">View Live <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
@@ -382,9 +354,9 @@ footer{background:var(--bg);border-top:0.5px solid var(--surface2);padding:32px 
     </div>
 
     <div class="project-card">
-      <div class="project-img-placeholder">
-        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="1"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
-        <span>Add screenshot → images/proj-stock.png</span>
+      <div class="project-img-wrap">
+        <img src="images/proj-stock.png" class="project-img" alt="Stock Market Dashboard and Forecasting"
+          onerror="this.parentElement.style.background='var(--surface)';this.style.display='none'"/>
       </div>
       <div class="project-body">
         <div class="project-num">06</div>
@@ -398,9 +370,9 @@ footer{background:var(--bg);border-top:0.5px solid var(--surface2);padding:32px 
     </div>
 
     <div class="project-card">
-      <div class="project-img-placeholder">
-        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="1"><line x1="12" y1="20" x2="12" y2="10"/><line x1="18" y1="20" x2="18" y2="4"/><line x1="6" y1="20" x2="6" y2="16"/></svg>
-        <span>Add screenshot → images/proj-sales.png</span>
+      <div class="project-img-wrap">
+        <img src="images/proj-sales.png" class="project-img" alt="Sales Performance Dashboard"
+          onerror="this.parentElement.style.background='var(--surface)';this.style.display='none'"/>
       </div>
       <div class="project-body">
         <div class="project-num">07</div>
@@ -414,9 +386,9 @@ footer{background:var(--bg);border-top:0.5px solid var(--surface2);padding:32px 
     </div>
 
     <div class="project-card">
-      <div class="project-img-placeholder">
-        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="1"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
-        <span>Add screenshot → images/proj-ai-jobs.png</span>
+      <div class="project-img-wrap">
+        <img src="images/proj-ai-jobs.png" class="project-img" alt="AI Job Market Dashboard"
+          onerror="this.parentElement.style.background='var(--surface)';this.style.display='none'"/>
       </div>
       <div class="project-body">
         <div class="project-num">08</div>
@@ -442,12 +414,10 @@ footer{background:var(--bg);border-top:0.5px solid var(--surface2);padding:32px 
     <div class="doc-card">
       <div class="doc-icon">📄</div>
       <div class="doc-name">Academic Transcript</div>
-      <div class="doc-desc">Official semester-by-semester grade report from Marwadi University covering all 6 semesters. CGPA: 7.92 / 10, First Class with Distinction.</div>
-      <div class="doc-note">
-        <!-- TO ENABLE: Upload your transcript PDF to your GitHub repo or Cloudinary, then replace href="#" with the direct link -->
-        Upload your transcript PDF to GitHub or Cloudinary and replace the link below.
-      </div>
-      <a href="#" class="doc-btn" onclick="alert('Upload your transcript.pdf to your GitHub repo at: github.com/Iceyma02, then update this link.')">
+      <div class="doc-desc">Official semester-by-semester grade report from Marwadi University covering all 6 semesters. CGPA: 7.92 / 10, First Class with Distinction. Graduated November 2025.</div>
+      <div class="doc-note">Full academic record including all course grades, credits, and SGPAs across all semesters.</div>
+      <!-- TRANSCRIPT: saved as docs/transcript.pdf in your repo -->
+      <a href="docs/transcript.pdf" download="Anesu_Manjengwa_Transcript.pdf" class="doc-btn">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
         Download Transcript
       </a>
@@ -456,26 +426,11 @@ footer{background:var(--bg);border-top:0.5px solid var(--surface2);padding:32px 
     <div class="doc-card">
       <div class="doc-icon">🎓</div>
       <div class="doc-name">Degree Certificate</div>
-      <div class="doc-desc">Bachelor of Computer Applications, Marwadi University. Available upon request to verified employers. Graduating May 2026.</div>
-      <div class="doc-note">
-        Degree certificate is shared privately with verified employers only. Contact via email to request a copy.
-      </div>
-      <a href="mailto:manjengwap10@gmail.com?subject=Degree Certificate Request" class="doc-btn">
+      <div class="doc-desc">Bachelor of Computer Applications, Marwadi University. Graduated November 2025 with First Class Distinction.</div>
+      <div class="doc-note">Degree certificate is shared privately with verified employers only. Contact via email to request a copy.</div>
+      <a href="mailto:manjengwap10@gmail.com?subject=Degree%20Certificate%20Request%20%E2%80%94%20Anesu%20Manjengwa&body=Hi%20Anesu%2C%0A%0AI%20would%20like%20to%20request%20a%20copy%20of%20your%20degree%20certificate%20for%20verification%20purposes.%0A%0AOrganisation%3A%20%0AName%3A%20%0APosition%3A%20%0A%0AThank%20you." class="doc-btn">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
         Request via Email
-      </a>
-    </div>
-
-    <div class="doc-card">
-      <div class="doc-icon">📋</div>
-      <div class="doc-name">Curriculum Vitae (CV)</div>
-      <div class="doc-desc">Full professional CV including education, work experience, skills, projects, and certifications — formatted for international job applications.</div>
-      <div class="doc-note">
-        Upload your CV PDF to GitHub or Cloudinary and replace the link below to enable download.
-      </div>
-      <a href="#" class="doc-btn" onclick="alert('Upload your CV.pdf and update this link.')">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-        Download CV
       </a>
     </div>
 
@@ -483,9 +438,7 @@ footer{background:var(--bg);border-top:0.5px solid var(--surface2);padding:32px 
       <div class="doc-icon">🏅</div>
       <div class="doc-name">Professional Certifications</div>
       <div class="doc-desc">IBM, Deloitte, BCGx, JP Morgan, Citi, Quantium, TATA, Cisco and more — 16 verified professional certificates from global institutions.</div>
-      <div class="doc-note">
-        Certificate verification links are available on LinkedIn. Connect and view the Licenses &amp; Certifications section.
-      </div>
+      <div class="doc-note">All certificate verification links are on LinkedIn under Licenses &amp; Certifications.</div>
       <a href="https://linkedin.com/in/anesu-manjengwa-684766247" target="_blank" class="doc-btn">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
         View on LinkedIn
@@ -501,7 +454,7 @@ footer{background:var(--bg);border-top:0.5px solid var(--surface2);padding:32px 
     <div class="certs-sticky">
       <p class="section-label reveal">Credentials</p>
       <h2 class="section-heading reveal" style="font-size:clamp(36px,5vw,64px)">Certified<br/><span style="color:var(--teal)">Expert</span></h2>
-      <div class="gold-divider reveal"></div>
+      <div class="teal-divider reveal"></div>
       <p class="reveal" style="font-size:14px;color:var(--text-muted);max-width:280px;line-height:1.8">Professional certifications from the world's leading institutions in data science, analytics, and finance.</p>
     </div>
     <div class="certs-list">
@@ -533,8 +486,12 @@ footer{background:var(--bg);border-top:0.5px solid var(--surface2);padding:32px 
   <div class="edu-card reveal">
     <div class="edu-degree">Bachelor of Computer Applications (BCA)</div>
     <div class="edu-uni">Marwadi University</div>
-    <div class="edu-meta">2022 – May 2025 &nbsp;·&nbsp; Rajkot, India</div>
-    <div><span class="edu-badge">First Class with Distinction</span><span class="edu-badge">CGPA: 7.92 / 10</span><span class="edu-badge">Graduated</span></div>
+    <div class="edu-meta">2022 – November 2025 &nbsp;·&nbsp; Rajkot, India</div>
+    <div>
+      <span class="edu-badge">First Class with Distinction</span>
+      <span class="edu-badge">CGPA: 7.92 / 10</span>
+      <span class="edu-badge">Graduated Nov 2025</span>
+    </div>
   </div>
   <div class="sem-grid">
     <div class="sem-card"><div class="sem-title">Semester 1</div><div class="sem-sgpa">SGPA: 8.65 · 23 Credits</div><div class="sem-course">Mathematics-1 <span class="sem-grade">A</span></div><div class="sem-course">Architectural Organization of Computers <span class="sem-grade">O</span></div><div class="sem-course">Programming Practices-1 (C) <span class="sem-grade">O</span></div><div class="sem-course">Basics of Web Development <span class="sem-grade">A</span></div><div class="sem-course">Environmental Science <span class="sem-grade">B+</span></div><div class="sem-course">Speaking &amp; Presentation Skills <span class="sem-grade">A</span></div></div>
@@ -552,17 +509,26 @@ footer{background:var(--bg);border-top:0.5px solid var(--surface2);padding:32px 
   <div class="contact-content">
     <p class="section-label reveal" style="justify-content:center">Let's Work Together</p>
     <h2 class="section-heading contact-cta-heading reveal">Ready to<br/><span style="color:var(--teal)">Build</span><br/>Something?</h2>
-    <p class="reveal" style="color:var(--text-muted);font-size:15px;line-height:1.8">Whether you need a dashboard, a predictive model, or a full analytics system — I'm available for freelance projects, internships, and full-time roles globally.</p>
+    <p class="reveal" style="color:var(--text-muted);font-size:15px;line-height:1.8">Whether you need a dashboard, a predictive model, or a full analytics system — I'm available for freelance projects, remote roles, and consulting engagements globally.</p>
     <div class="contact-links reveal">
-      <a href="mailto:manjengwap10@gmail.com" class="contact-chip"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>Email Me</a>
-      <a href="https://linkedin.com/in/anesu-manjengwa-684766247" target="_blank" class="contact-chip"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>LinkedIn</a>
-      <a href="https://github.com/Iceyma02" target="_blank" class="contact-chip"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>GitHub</a>
+      <a href="mailto:manjengwap10@gmail.com?subject=Project%20Inquiry%20%E2%80%94%20Anesu%20Manjengwa&body=Hi%20Anesu%2C%0A%0AI%20came%20across%20your%20portfolio%20and%20would%20like%20to%20discuss%20the%20following%3A%0A%0A" class="contact-chip">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+        Email Me
+      </a>
+      <a href="https://linkedin.com/in/anesu-manjengwa-684766247" target="_blank" class="contact-chip">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+        LinkedIn
+      </a>
+      <a href="https://github.com/Iceyma02" target="_blank" class="contact-chip">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+        GitHub
+      </a>
     </div>
   </div>
 </section>
 
 <footer>
-  <span class="footer-logo">AM</span>
+  <span class="footer-logo">AM · MA TechHub</span>
   <span class="footer-copy">© 2026 Anesu Manjengwa. Built with purpose from Harare, Zimbabwe.</span>
 </footer>
 
@@ -588,18 +554,6 @@ document.querySelectorAll('.project-card').forEach(card=>{
   card.addEventListener('mousemove',e=>{const r=card.getBoundingClientRect();card.style.background=`radial-gradient(220px circle at ${e.clientX-r.left}px ${e.clientY-r.top}px,rgba(0,212,160,0.07),var(--bg3) 60%)`});
   card.addEventListener('mouseleave',()=>card.style.background='');
 });
-
-function previewPhoto(input){
-  if(input.files&&input.files[0]){
-    const reader=new FileReader();
-    reader.onload=e=>{
-      const slot=document.getElementById('photoSlot');
-      slot.innerHTML=`<img src="${e.target.result}" style="width:100%;height:100%;object-fit:cover;border-radius:${getComputedStyle(document.documentElement).getPropertyValue('--radius')}"/>`;
-      slot.style.border='none';slot.style.padding='0';
-    };
-    reader.readAsDataURL(input.files[0]);
-  }
-}
 </script>
 </body>
 </html>
